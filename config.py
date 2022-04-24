@@ -43,7 +43,7 @@ class Config(object):
 	# these users can use your userbot
 	SUDO_USERS = [int(x) for x in os.getenv("SUDO_USERS", "").split()] # splits on spaces
 	# a group to store logs, etc (required)
-	LOG_CHAT = int(os.getenv("-1001496311246"))
+	LOG_CHAT =(os.getenv("-1001496311246"))
 	# command handler, if you give (exclamation symbol = !) then you can do like this command: !ping => result: pong !
 	PREFIX = os.getenv("PREFIX", ".")
 	# for more info visit docs.pyrogram.org, workers section
