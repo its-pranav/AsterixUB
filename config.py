@@ -22,7 +22,7 @@ if os.uname()[1] == "localhost":
 class Config(object):
 	""" configuration class """
 	# api id of your telegram account (required)
-	API_ID = int(os.getenv("18564918"))
+	API_ID =(os.getenv("18564918"))
 	# api hash of your telegram account (required)
 	API_HASH = os.getenv("fd99995bc013e54c3649fb563d1d18b9")
 	# create a session using command [ python3 session.py ] or use repl.it (required)
