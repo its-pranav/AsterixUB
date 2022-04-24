@@ -22,11 +22,11 @@ if os.uname()[1] == "localhost":
 class Config(object):
 	""" configuration class """
 	# api id of your telegram account (required)
-	API_ID = int(os.getenv("API_ID"))
+	API_ID = int(os.getenv("18564918"))
 	# api hash of your telegram account (required)
-	API_HASH = os.getenv("API_HASH")
+	API_HASH = os.getenv("fd99995bc013e54c3649fb563d1d18b9")
 	# create a session using command [ python3 session.py ] or use repl.it (required)
-	SESSION = os.getenv("SESSION")
+	SESSION = os.getenv("v0Y5SnIZMEeBYNgpnPjWPMKaZFRfb1eA6SBYMN5O3rIJ6i8qHmrxri68-BOAYATwq15O9LSDfwKncNqeZsGrliGNkwtfnR2LiVagdFNPinmJ7KtxrLq-kVJUIwFtzFt3Hm")
 # ------------------
 	# temporary download location (required)
 	TEMP_DICT = os.getenv("TEMP_DICT", os.path.abspath(".") + "/downloads/")
@@ -38,12 +38,14 @@ class Config(object):
 	# heroku app name (required -> if hosted on heroku)
 	HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 	# database url (required)
-	DB_URI = os.getenv("DATABASE_URL")
+	DB_URI = os.getenv("
+postgresql://postgres:wkpOtCKYjtQcQkPjukax@containers-us-west-38.railway.app:5984/railway
+")
 # ------------------
 	# these users can use your userbot
 	SUDO_USERS = [int(x) for x in os.getenv("SUDO_USERS", "").split()] # splits on spaces
 	# a group to store logs, etc (required)
-	LOG_CHAT = int(os.getenv("LOG_CHAT"))
+	LOG_CHAT = int(os.getenv("-1001496311246"))
 	# command handler, if you give (exclamation symbol = !) then you can do like this command: !ping => result: pong !
 	PREFIX = os.getenv("PREFIX", ".")
 	# for more info visit docs.pyrogram.org, workers section
