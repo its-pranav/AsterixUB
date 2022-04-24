@@ -38,9 +38,7 @@ class Config(object):
 	# heroku app name (required -> if hosted on heroku)
 	HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 	# database url (required)
-	DB_URI = os.getenv("
-postgresql://postgres:wkpOtCKYjtQcQkPjukax@containers-us-west-38.railway.app:5984/railway
-")
+	DB_URI = os.getenv("postgresql://postgres:wkpOtCKYjtQcQkPjukax@containers-us-west-38.railway.app:5984/railway")
 # ------------------
 	# these users can use your userbot
 	SUDO_USERS = [int(x) for x in os.getenv("SUDO_USERS", "").split()] # splits on spaces
